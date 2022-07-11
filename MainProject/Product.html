@@ -1,12 +1,14 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 
+    <meta charset="utf-8" />
+    <title></title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
             $("button").click(function () {
-                $.get("http://localhost:5054/api/products", function (data) {
+                $.get("http://localhost:5222/api/Products", function (data, status) {
                     console.log(data);
                 });
             });
@@ -15,7 +17,7 @@
 </head>
 <body>
 
-    <button style="color:cornflowerblue">Get Product</button>
+    <button>GetProducts</button>
 
 </body>
 </html>
